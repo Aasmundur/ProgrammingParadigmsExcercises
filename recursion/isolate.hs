@@ -1,8 +1,9 @@
 -- this one is a bit tougher than the last
 --Define type
 isolate :: Eq a => [a] -> a -> ([a], [a])
---Base case
+--Base case:
 isolate [] _ = ([],[])
+--Other case:
 isolate (l:ls) x | l == x =  (l1, l : l2)
                  | otherwise = (l:l1, l2)
             where
